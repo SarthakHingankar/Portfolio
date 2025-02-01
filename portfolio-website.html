@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <button
+      class="menu-toggle"
+      onclick="document.querySelector('.sidebar').classList.toggle('active')"
+    >
+      ☰
+    </button>
+
+    <aside class="sidebar">
+      <img src="/profile.jpeg" alt="Profile" class="profile-img" />
+      <h2>Sarthak Hingankar</h2>
+      <nav class="nav-links">
+        <a href="#home" onclick="closeMobileMenu()">Home</a>
+        <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+        <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Backend Developer</h1>
+        <h3>
+          Building Scalable Web Applications with Node.js & Cloud Solutions
+        </h3>
+        <p>
+          I specialize in creating powerful backend systems using Node.js,
+          MySQL, and AWS,
+        </p>
+        <p>focused on performance, security, and scalability.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="button button-primary">Contact Now</a>
+          <a href="#projects" class="button button-secondary">View Work</a>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+              ></path>
+            </svg>
+            <h3>Instagram Explore Page Clone</h3>
+            <p>
+              A clone of Instagram’s Explore page designed to replicate dynamic
+              content discovery and feed features.
+            </p>
+            <br />
+            <p>Technologies Used: Node.js, AWS S3</p>
+            <br />
+            <div class="project-links">
+              <a
+                href="https://github.com/SarthakHingankar/Explore"
+                class="repo-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 48 48"
+            >
+              <path
+                d="M 10.5 8 C 6.9280619 8 4 10.928062 4 14.5 L 4 33.5 C 4 37.071938 6.9280619 40 10.5 40 L 37.5 40 C 41.071938 40 44 37.071938 44 33.5 L 44 14.5 C 44 10.928062 41.071938 8 37.5 8 L 10.5 8 z M 10.5 11 L 37.5 11 C 39.450062 11 41 12.549938 41 14.5 L 41 15.605469 L 24 24.794922 L 7 15.605469 L 7 14.5 C 7 12.549938 8.5499381 11 10.5 11 z M 7 19.015625 L 23.287109 27.820312 A 1.50015 1.50015 0 0 0 24.712891 27.820312 L 41 19.015625 L 41 33.5 C 41 35.450062 39.450062 37 37.5 37 L 10.5 37 C 8.5499381 37 7 35.450062 7 33.5 L 7 19.015625 z"
+              ></path>
+            </svg>
+            <h3>Custom Mail Server</h3>
+            <p>
+              A fully-functional mail server designed to handle incoming and
+              outgoing emails with enhanced security and performance
+            </p>
+            <br />
+            <p>Technologies Used: Node.js, SMTP, IMAP, AWS</p>
+            <br />
+            <div class="project-links">
+              <a
+                href="https://github.com/SarthakHingankar/Email_Server"
+                target="_blank"
+                class="repo-link"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 48 48"
+            >
+              <path
+                d="M 15.5 5 C 13.2 5 11.179531 6.1997656 10.019531 8.0097656 C 10.179531 7.9997656 10.34 8 10.5 8 L 33.5 8 C 37.64 8 41 11.36 41 15.5 L 41 31.5 C 41 31.66 41.000234 31.820469 40.990234 31.980469 C 42.800234 30.820469 44 28.8 44 26.5 L 44 15.5 C 44 9.71 39.29 5 33.5 5 L 15.5 5 z M 10.5 10 C 6.9280619 10 4 12.928062 4 16.5 L 4 31.5 C 4 35.071938 6.9280619 38 10.5 38 L 11 38 L 11 42.535156 C 11 44.486408 13.392719 45.706869 14.970703 44.558594 L 23.988281 38 L 32.5 38 C 36.071938 38 39 35.071938 39 31.5 L 39 16.5 C 39 12.928062 36.071938 10 32.5 10 L 10.5 10 z M 10.5 13 L 32.5 13 C 34.450062 13 36 14.549938 36 16.5 L 36 31.5 C 36 33.450062 34.450062 35 32.5 35 L 23.5 35 A 1.50015 1.50015 0 0 0 22.617188 35.287109 L 14 41.554688 L 14 36.5 A 1.50015 1.50015 0 0 0 12.5 35 L 10.5 35 C 8.5499381 35 7 33.450062 7 31.5 L 7 16.5 C 7 16.256242 7.0241227 16.018071 7.0703125 15.789062 C 7.3936413 14.186005 8.7936958 13 10.5 13 z"
+              ></path>
+            </svg>
+            <h3>Real-Time Chat App</h3>
+            <p>
+              A secure, real-time messaging app built with Node.js and
+              Socket.io, providing instant communication features.
+            </p>
+            <br />
+            <p>Technologies Used: Node.js, Socket.io, mySQL, JWT, AWS</p>
+            <br />
+            <div class="project-links">
+              <a
+                href="https://github.com/SarthakHingankar/ChatApp"
+                class="repo-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skills-column">
+            <h3>Hard Skills</h3>
+            <ul class="skills-list">
+              <li>NodeJS & Express</li>
+              <li>Javascript</li>
+              <li>MySQL and MongoDB</li>
+              <li>AWS Cloud Services</li>
+              <li>RESTful Api Development</li>
+              <li>Version Control (Git & Github)</li>
+              <li>Testing & Debugging</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <h3>Soft Skills</h3>
+            <ul class="skills-list">
+              <li>Problem Solving</li>
+              <li>Adaptability</li>
+              <li>Communication</li>
+              <li>Multi-tasking</li>
+              <li>Team Collaboration</li>
+              <li>Efficiency in Workflow</li>
+              <li>Critical Thinking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div>
+          <h2>About Me</h2>
+          <p id="about-text" class="about-text">
+            Hi, I’m Sarthak, a backend developer passionate about creating
+            efficient and scalable web applications. My interest in backend
+            development started when I realized how much I enjoyed solving
+            complex problems behind the scenes of web apps. I’m a self-taught
+            developer, diving deep into Node.js, Express, and SQL/NoSQL
+            databases through hands-on projects and online resources. This
+            journey allowed me to build a strong foundation in backend systems
+            and cloud hosting with AWS. I specialize in building secure and
+            scalable backend systems using Node.js, Express, and databases like
+            MySQL and MongoDB. I can help you with custom APIs, data management,
+            and deploying applications to the cloud. I focus on clear
+            communication and writing clean, maintainable code. I enjoy
+            collaborating with teams and ensure the solutions I deliver are
+            high-quality and secure. My goal is to continue learning, expand my
+            skill set, and lead projects that make a meaningful impact in the
+            tech industry.
+          </p>
+          <br />
+          <a href="/resume.pdf" download>
+            <button class="button button-primary">Download Resume</button>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-details">
+              <h3>Contact Details</h3>
+              <div class="contact-item">
+                <span>📧</span>
+                <a
+                  class="social-link"
+                  href="mailto:sarthakhingan@gmail.com"
+                  target="_blank"
+                  >sarthakhingan@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <span>📱</span>
+                <a>+91 9529953105</a>
+              </div>
+              <div class="contact-item">
+                <span>📍</span>
+                <span>Pune</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <h3>Connect With Me</h3>
+              <a
+                href="https://github.com/SarthakHingankar"
+                class="social-link"
+                target="_blank"
+              >
+                <span>🔗</span>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sarthakhingankar"
+                class="social-link"
+                target="_blank"
+              >
+                <span>🔗</span>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <form>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function closeMobileMenu() {
+        if (window.innerWidth <= 768) {
+          document.querySelector(".sidebar").classList.remove("active");
+        }
+      }
+    </script>
+  </body>
+</html>
